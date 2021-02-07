@@ -1,0 +1,21 @@
+{
+  "name": "base-scripts",
+  "version": "0.0.0",
+  "description": "Base Scripts",
+  "main": "lib/index.js",
+  "bin": {
+    "base-scripts": "lib/cli.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Róbert Darida",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
