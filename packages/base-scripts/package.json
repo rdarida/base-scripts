@@ -1,6 +1,6 @@
 {
   "name": "base-scripts",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Base Scripts",
   "main": "lib/index.js",
   "bin": {
