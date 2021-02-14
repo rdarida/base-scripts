@@ -1,6 +1,6 @@
 {
   "name": "base-scripts",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Base Scripts",
   "main": "lib/index.js",
   "bin": {
@@ -17,5 +17,6 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "2b4302f70d9b67c2952c95f8a063c65d15dfaa54"
 }
