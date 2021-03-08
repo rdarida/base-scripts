@@ -2,21 +2,37 @@
   "name": "base-scripts",
   "version": "0.1.0",
   "description": "Base Scripts",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "bin": {
-    "base-scripts": "lib/cli.js"
+    "base-scripts": "dist/cli.js"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist",
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "homepage": "https://rdarida.github.io/base-scripts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdarida/base-scripts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rdarida/base-scripts/issues"
   },
   "keywords": [],
   "author": "Róbert Darida",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.32",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.3"
   },
   "gitHead": "2b4302f70d9b67c2952c95f8a063c65d15dfaa54"
 }
