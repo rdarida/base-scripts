@@ -3,18 +3,13 @@
   "version": "0.1.0",
   "description": "Base Scripts",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "bin": {
     "base-scripts": "dist/cli.js"
   },
   "files": [
     "dist"
   ],
-  "scripts": {
-    "clean": "rimraf dist",
-    "prebuild": "rimraf dist",
-    "build": "tsc",
-    "prepublish": "npm run build"
-  },
   "homepage": "https://rdarida.github.io/base-scripts",
   "repository": {
     "type": "git",
@@ -29,6 +24,13 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^14.14.32",
     "rimraf": "^3.0.2",
