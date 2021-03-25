@@ -1,5 +1,5 @@
 {
-  "name": "@kreaktivlab/magik",
+  "name": "base-scripts",
   "testEnvironment": "jsdom",
   "transform": {
     "^.+\\.ts$": "ts-jest"
