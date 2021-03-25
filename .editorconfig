@@ -8,10 +8,10 @@ charset = utf-8
 indent_size = 2
 indent_style = space
 
-[{packages/**}]
+[{packages/*/src/**,packages/*/test/**}]
 end_of_line = crlf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[{*.md}]
+[*.md]
 trim_trailing_whitespace = unset

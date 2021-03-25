@@ -1,3 +1,1 @@
-export function log(...argv: string[]) {
-  console.log(...argv);
-}
+export default console.log;

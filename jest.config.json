@@ -1,0 +1,12 @@
+{
+  "name": "@kreaktivlab/magik",
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.ts$": "ts-jest"
+  },
+  "testRegex": "(/test/.*|(\\.|/)test)\\.ts$",
+  "moduleFileExtensions": ["js", "ts", "json", "node"],
+  "collectCoverage": true,
+  "collectCoverageFrom": ["./packages/*/src/**/*.ts"],
+  "coveragePathIgnorePatterns": ["/dist/", "/node_modules/", "/test/", "/src/cli.ts"]
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { log } from './index';
+import log from './index';
 
 ((cwd, argv) => {
   try {
