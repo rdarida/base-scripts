@@ -18,6 +18,7 @@
     "predocs": "rimraf docs",
     "docs": "lerna run docs"
   },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^26.0.22",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
