@@ -1,7 +1,7 @@
 {
-  "name": "base-script-prettier",
-  "description": "Prettier for Base Scripts",
-  "version": "0.1.0",
+  "name": "{{values.scope}}{{values.name}}",
+  "description": "{{values.description}}",
+  "version": "{{values.version}}",
   "license": "MIT",
   "author": "Róbert Darida",
   "keywords": [],
@@ -9,7 +9,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rdarida/base-scripts.git",
-    "directory": "packages/base-script-prettier"
+    "directory": "packages/{{values.name}}"
   },
   "bugs": {
     "url": "https://github.com/rdarida/base-scripts/issues"
@@ -27,13 +27,10 @@
     "prebuild": "rimraf dist",
     "build": "tsc",
     "prepublishOnly": "npm run build",
-    "predocs": "rimraf ../../docs/base-script-prettier",
-    "docs": "typedoc --out ../../docs/base-script-prettier src"
+    "predocs": "rimraf ../../docs/{{values.name}}",
+    "docs": "typedoc --out ../../docs/{{values.name}} src"
   },
-  "dependencies": {
-    "prettier": "^2.2.1",
-    "shelljs": "^0.8.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "rimraf": "^3.0.2",
     "typedoc": "^0.20.34",
