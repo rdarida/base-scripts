@@ -1,7 +1,7 @@
 {
-  "name": "{{values.scope}}{{values.name}}",
-  "description": "{{values.description}}",
-  "version": "{{values.version}}",
+  "name": "{{scope}}{{name}}",
+  "description": "{{description}}",
+  "version": "{{version}}",
   "license": "MIT",
   "author": "Róbert Darida",
   "keywords": [],
@@ -9,7 +9,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rdarida/base-scripts.git",
-    "directory": "packages/{{values.name}}"
+    "directory": "packages/{{name}}"
   },
   "bugs": {
     "url": "https://github.com/rdarida/base-scripts/issues"
@@ -27,8 +27,8 @@
     "prebuild": "rimraf dist",
     "build": "tsc",
     "prepublishOnly": "npm run build",
-    "predocs": "rimraf ../../docs/{{values.name}}",
-    "docs": "typedoc --out ../../docs/{{values.name}} src"
+    "predocs": "rimraf ../../docs/{{name}}",
+    "docs": "typedoc --out ../../docs/{{name}} src"
   },
   "dependencies": {},
   "devDependencies": {
