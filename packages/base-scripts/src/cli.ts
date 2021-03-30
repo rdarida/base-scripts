@@ -7,6 +7,7 @@ import log from './index';
     log(cwd, ...argv);
   } catch (error) {
     console.log(error.message);
+    process.exit(1);
   }
 
   process.exit();
