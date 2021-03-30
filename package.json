@@ -32,7 +32,7 @@
     "husky": "^4.3.8",
     "jest": "^26.6.3",
     "lerna": "^4.0.0",
-    "lerna-templater": "^1.0.1",
+    "lerna-templater": "^1.1.0",
     "mustache": "^4.2.0",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
