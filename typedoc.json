@@ -1,7 +1,0 @@
-{
-  "entryPoints": [
-    "./packages/base-script-vscode/src",
-    "./packages/base-scripts/src"
-  ],
-  "out": "docs"
-}
