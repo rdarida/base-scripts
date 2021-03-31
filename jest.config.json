@@ -8,5 +8,5 @@
   "moduleFileExtensions": ["js", "ts", "json", "node"],
   "collectCoverage": true,
   "collectCoverageFrom": ["./packages/*/src/**/*.ts"],
-  "coveragePathIgnorePatterns": ["/dist/", "/node_modules/", "/test/", "/src/cli.ts"]
+  "coveragePathIgnorePatterns": ["__template__", "/dist/", "/node_modules/", "/test/", "/src/cli.ts"]
 }

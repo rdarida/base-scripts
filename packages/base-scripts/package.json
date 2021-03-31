@@ -30,6 +30,9 @@
     "predocs": "rimraf ../../docs/base-scripts",
     "docs": "typedoc --out ../../docs/base-scripts src"
   },
+  "dependencies": {
+    "base-script-utils": "^0.1.1"
+  },
   "devDependencies": {
     "rimraf": "^3.0.2",
     "typedoc": "^0.20.34",
