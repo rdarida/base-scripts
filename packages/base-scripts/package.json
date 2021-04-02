@@ -1,7 +1,7 @@
 {
   "name": "base-scripts",
   "description": "Base Scripts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "author": "Róbert Darida",
   "keywords": [],
@@ -30,7 +30,6 @@
     "predocs": "rimraf ../../docs/base-scripts",
     "docs": "typedoc --out ../../docs/base-scripts src"
   },
-  "dependencies": {},
   "devDependencies": {
     "rimraf": "^3.0.2",
     "typedoc": "^0.20.34",
