@@ -1,20 +1,30 @@
 {
-  "private": true,
-  "name": "base-scripts-monorepo",
+  "name": "base-scripts",
+  "description": "Base Scripts",
+  "version": "0.1.2",
   "license": "MIT",
   "author": "Róbert Darida",
-  "scripts": {
-    "presetup": "rimraf packages/**/node_modules packages/**/package-lock.json",
-    "setup": "rimraf package-lock.json",
-    "postsetup": "npm install && npm run bootstrap",
-    "bootstrap": "lerna bootstrap",
-    "clean": "lerna run clean",
-    "postclean": "rimraf coverage docs",
-    "build": "lerna run build",
-    "publish": "lerna publish"
+  "keywords": [],
+  "homepage": "https://rdarida.github.io/base-scripts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdarida/base-scripts.git",
+    "directory": "packages/base-scripts"
   },
+  "bugs": {
+    "url": "https://github.com/rdarida/base-scripts/issues"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "rimraf dist",
+    "build": "babel src --out-dir dist",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {},
   "devDependencies": {
-    "lerna": "^4.0.0",
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
     "rimraf": "^3.0.2"
   }
 }

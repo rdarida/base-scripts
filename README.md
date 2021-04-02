@@ -1,7 +1,18 @@
-# Base Scripts Monorepo
+# Base Scripts
+TBD
 
-## Packages
-- [base-scripts](packages/base-scripts)
+## Installing
+You can install the **Base Scripts** using npm (the Node Package Manager). Note that you will need to install [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). Installing Node.js should install npm as well.
+
+To download and install the **Base Scripts** run the following command:
+```
+npm install -D base-scripts
+```
+
+## Usage
+```
+npx base-scripts <command> [...arguments]
+```
 
 ## Resources
 - [Building a JavaScript Monorepo with Lerna](https://javascript.plainenglish.io/javascript-monorepo-with-lerna-5729d6242302)
