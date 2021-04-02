@@ -1,6 +1,6 @@
 {
-  "name": "base-scripts",
-  "description": "Base Scripts",
+  "name": "base-script-vscode",
+  "description": "VSCode Settings for Base Scripts",
   "version": "0.1.1",
   "license": "MIT",
   "author": "Róbert Darida",
@@ -9,26 +9,26 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rdarida/base-scripts.git",
-    "directory": "packages/base-scripts"
+    "directory": "packages/base-script-vscode"
   },
   "bugs": {
     "url": "https://github.com/rdarida/base-scripts/issues"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "bin": {
-    "base-scripts": "dist/cli.js"
-  },
   "files": [
     "dist"
   ],
+  "bin": {
+    "base-script-vscode": "dist/cli.js"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "rimraf dist",
     "build": "tsc",
     "prepublishOnly": "npm run build",
-    "predocs": "rimraf ../../docs/base-scripts",
-    "docs": "typedoc --out ../../docs/base-scripts src"
+    "predocs": "rimraf ../../docs/base-script-vscode",
+    "docs": "typedoc --out ../../docs/base-script-vscode src"
   },
   "dependencies": {},
   "devDependencies": {
@@ -38,6 +38,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "gitHead": "2b4302f70d9b67c2952c95f8a063c65d15dfaa54"
+  }
 }
