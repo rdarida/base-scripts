@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import log from './index';
+const log = require('./index');
 
 ((cwd, argv) => {
   try {
