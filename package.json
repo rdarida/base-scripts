@@ -14,6 +14,13 @@
   "bugs": {
     "url": "https://github.com/rdarida/base-scripts/issues"
   },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "base-scripts": "dist/cli.js"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "rimraf dist",
