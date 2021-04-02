@@ -1,7 +1,7 @@
 {
-  "name": "{{{scope}}}/{{name}}",
-  "description": "{{description}}",
-  "version": "{{version}}",
+  "name": "{{{name}}}",
+  "description": "{{{description}}}",
+  "version": "{{{version}}}",
   "license": "MIT",
   "author": "Róbert Darida",
   "keywords": [],
@@ -20,15 +20,15 @@
     "dist"
   ],
   "bin": {
-    "{{name}}": "dist/cli.js"
+    "{{{name}}}": "dist/cli.js"
   },
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "rimraf dist",
     "build": "tsc",
     "prepublishOnly": "npm run build",
-    "predocs": "rimraf ../../docs/{{name}}",
-    "docs": "typedoc --out ../../docs/{{name}} src"
+    "predocs": "rimraf ../../docs/{{{name}}}",
+    "docs": "typedoc --out ../../docs/{{{name}}} src"
   },
   "dependencies": {},
   "devDependencies": {
