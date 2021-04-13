@@ -1,5 +1,10 @@
-# Base Scripts
-TBD
+<h1 align="center">base-scripts</h1>
+<p align="center">Base Scripts</p>
+<p align="center">
+  <img alt="dependencies" src="https://david-dm.org/rdarida/base-scripts/status.svg" />
+  <img alt="devDependencies" src="https://david-dm.org/rdarida/base-scripts/dev-status.svg" />
+</p>
+<hr>
 
 ## Installing
 You can install the **Base Scripts** using npm (the Node Package Manager). Note that you will need to install [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). Installing Node.js should install npm as well.
